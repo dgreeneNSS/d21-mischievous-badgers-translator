@@ -3,9 +3,10 @@ console.log(toBeDone);
 let sentenceArray = toBeDone.toLowerCase().split(" ");
 console.log(sentenceArray);
 let newSentence = [];
+console.log( "newSentence", newSentence );
 
 sentenceArray.forEach(function(item){
-    if(item == "marry"){
+    if(item == "merry"){
         newSentence.push('joyeux');
     }else if(item == "christmas"){
         newSentence.push('noel');
@@ -18,5 +19,4 @@ sentenceArray.forEach(function(item){
     }else if(item == 'year'){
         newSentence.push('annee');
     }
-    
 });
