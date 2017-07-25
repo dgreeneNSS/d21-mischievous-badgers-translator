@@ -1,3 +1,4 @@
+
 var Translator = (function() {
 
     let toBeDone = document.getElementById("toBeTranslated").value;
@@ -33,5 +34,4 @@ var Translator = (function() {
     };
 
 })();
-
 
