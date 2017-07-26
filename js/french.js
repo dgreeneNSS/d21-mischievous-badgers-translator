@@ -28,7 +28,12 @@ var Translator = (function() {
             return newSentence.join(" ");
         });
 
-        console.log("new sentence: ", newSentence.join(" "));
+            let output_div = document.querySelector('#output-language');
+            output_div.innerText = newSentence.join(' ')
+            let speak = document.querySelector('#text-speak')
+            let speak_att = document.createAttribute('onclick')
+            speak_att.value = responsiveVoice.speak(output_div.innerText, 'French Female', {pitch: 1}, {rate: 0})
+            speak.setAttributeNode(speak_att)
     }
         
     };
