@@ -1,4 +1,6 @@
-var Translator = (function() {
+
+
+var Translator = (function(e) {
 
     let toBeDone = document.getElementById("toBeTranslated").value;
     console.log(toBeDone);
@@ -6,12 +8,12 @@ var Translator = (function() {
     console.log(sentenceArray);
     let newSentence = [];
 
-    return {
 
-        addOrc: function() {
+
+        e.addOrc = function() {
             sentenceArray.forEach(function(item){
                 if(item == "merry"){
-                    newSentence.push('Merry');
+                    newSentence.push("‘erry");
                 }else if(item == "christmas"){
                     newSentence.push('Chrixmus ');
                 }else if(item == 'and'){
@@ -29,11 +31,14 @@ var Translator = (function() {
 
             let output_div = document.querySelector('#output-language');
             output_div.innerText = newSentence.join(' ')
-
+            let speak = document.querySelector('#text-speak')
+            let speak_att = document.createAttribute('onclick')
+            speak_att.value = responsiveVoice.speak(output_div.innerText, 'Welsh Male', {pitch: 0}, {rate: 0})
+            speak.setAttributeNode(speak_att)
         }
 
-
+        return e
     }
 
 
-})();
+)(Translator);
