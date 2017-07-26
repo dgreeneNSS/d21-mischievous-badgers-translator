@@ -1,7 +1,7 @@
 console.log('Hello world');
 
 let langbtn = document.getElementById('runTranslate');
-runTranslate.addEventListener("click", () =>{
+langbtn.addEventListener("click", () =>{
     let toBeTranslated = document.getElementById("toBeTranslated").value;
     let whichSelected;
     let radios = document.getElementsByName("whichLang");
