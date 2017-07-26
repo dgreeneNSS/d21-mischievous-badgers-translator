@@ -1,15 +1,13 @@
 
 var Translator = (function() {
 
-    let toBeDone = document.getElementById("toBeTranslated").value;
-    console.log(toBeDone);
-    let sentenceArray = toBeDone.toLowerCase().split(" ");
-    console.log(sentenceArray);
-
-
     return {
 
         addFrench: function() {
+             let toBeDone = document.getElementById("toBeTranslated").value;
+            console.log(toBeDone);
+            let sentenceArray = toBeDone.toLowerCase().split(" ");
+            console.log(sentenceArray);
             let newSentence = [];
             sentenceArray.forEach(function(item){
             if(item == "merry"){
@@ -24,7 +22,9 @@ var Translator = (function() {
                 newSentence.push('nouvelle');
             }else if(item == 'year'){
                 newSentence.push('annee');
-            }
+            }else {
+                    alert('The meat was bad!');
+                }
 
             return newSentence.join(" ");
         });

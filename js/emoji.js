@@ -1,14 +1,10 @@
 var Translator = (function(e) {
 
-    let toBeDone = document.getElementById("toBeTranslated").value;
-    console.log(toBeDone);
-    let sentenceArray = toBeDone.toLowerCase().split(" ");
-    console.log(sentenceArray);
-
-
-
-
         e.addEmoji = function() {
+            let toBeDone = document.getElementById("toBeTranslated").value;
+            console.log(toBeDone);
+            let sentenceArray = toBeDone.toLowerCase().split(" ");
+            console.log(sentenceArray);
             let newSentence = [];
             sentenceArray.forEach(function(item){
                 if(item == "merry"){
@@ -23,6 +19,8 @@ var Translator = (function(e) {
                     newSentence.push('🆕 ');
                 }else if(item == 'year'){
                     newSentence.push('🗓');
+                } else {
+                    alert('The meat was bad!');
                 }
 
                 return newSentence.join(" ");
