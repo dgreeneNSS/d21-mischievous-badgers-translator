@@ -14,20 +14,21 @@
 <input type="radio" name="whichLang" value="0" checked>Emoji<br>
 <input type="radio" name="whichLang" value="1">French<br>
 <input type="radio" name="whichLang" value="2">Old-English<br>
-<input type="radio" name="whichLang" value="3">Ork<br>
+<input type="radio" name="whichLang" value="3">Orc<br>
 
 
 
 <button id="runTranslate" type="submit">Translate</button>
-
+<input id="text-speak" onclick='responsiveVoice.speak(newSentence);' type='button' value='🔊 Play' hidden/>
 
 <div id="output-language"></div>
 
 
 <script src="js/main.js"></script>
-<script src="js/french.js"></script>
 <script src="js/emoji.js"></script>
 <script src="js/old-english.js"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+<script src="js/french.js"></script>
 <script src="js/orc.js"></script>
 </body>
 </html>
