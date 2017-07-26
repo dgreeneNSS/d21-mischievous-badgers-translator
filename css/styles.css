@@ -45,7 +45,7 @@ h1 {
 }
 
 .radio-btn {
-	padding: ;
+
 }
 
 span {
@@ -90,7 +90,8 @@ button:focus {
 	100% { -webkit-transform: translate(1px, -2px) rotate(-5deg); }
 }
 .shake:hover,
-.shake:focus {
+.shake:active
+{
 	-webkit-animation-name: spaceboots;
 	-webkit-animation-duration: 0.1s;
 	-webkit-transform-origin:50% 50%;

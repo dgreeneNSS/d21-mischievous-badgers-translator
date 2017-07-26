@@ -11,6 +11,7 @@ var Translator = (function(e) {
 
 
         e.addOrc = function() {
+            let newSentence = [];
             sentenceArray.forEach(function(item){
                 if(item == "merry"){
                     newSentence.push("‘erry");

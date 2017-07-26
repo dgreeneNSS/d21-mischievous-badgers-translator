@@ -4,11 +4,12 @@ var Translator = (function(e) {
     console.log(toBeDone);
     let sentenceArray = toBeDone.toLowerCase().split(" ");
     console.log(sentenceArray);
-    let newSentence = [];
+
 
 
 
         e.addIcelandic = function() {
+            let newSentence = [];
             sentenceArray.forEach(function(item){
                 if(item == "merry"){
                     newSentence.push("gleðileg");
