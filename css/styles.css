@@ -24,7 +24,9 @@ h1 {
 	position: relative;
 	z-index: 1;
 	top: 10px;
+	cursor: url('../images/meat-cursor.png'), auto;
 }
+
 
 #toBeTranslated {
 	position: relative;
@@ -52,20 +54,21 @@ span {
 }
 
 #runTranslate {
-	background: #724500;
-	-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-	border-radius: 3px;
+	background: rgba(0, 0, 0, 0);
 	color: white;
 	border: none;
 	padding: 5px;
 	font-family: 'Alegreya SC', sans-serif;
 	font-size: 1.6em;
+
+}
+
+button:focus {
+	outline: 0;
 }
 
 #output-language {
-	font-size: 5em;
+	font-size: 3em;
 	text-align: center;
 	margin-top: 10px;
 	font-family: 'Alegreya SC', sans-serif;
