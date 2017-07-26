@@ -1,4 +1,6 @@
-var Translator = (function() {
+
+
+var Translator = (function(e) {
 
     let toBeDone = document.getElementById("toBeTranslated").value;
     console.log(toBeDone);
@@ -6,12 +8,12 @@ var Translator = (function() {
     console.log(sentenceArray);
     let newSentence = [];
 
-    return {
 
-        addOrc: function() {
+
+        e.addOrc = function() {
             sentenceArray.forEach(function(item){
                 if(item == "merry"){
-                    newSentence.push('Merry');
+                    newSentence.push("‘erry");
                 }else if(item == "christmas"){
                     newSentence.push('Chrixmus ');
                 }else if(item == 'and'){
@@ -35,8 +37,8 @@ var Translator = (function() {
             speak.setAttributeNode(speak_att)
         }
 
-
+        return e
     }
 
 
-})();
+)(Translator);
