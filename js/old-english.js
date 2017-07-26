@@ -9,6 +9,7 @@ var Translator = (function(e) {
 
 
         e.addOldEnglish = function() {
+            let newSentence = [];
             sentenceArray.forEach(function(item){
                 if(item == "merry"){
                     newSentence.push("M'rry");
