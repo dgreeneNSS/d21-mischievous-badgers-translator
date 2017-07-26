@@ -22,5 +22,7 @@ langbtn.addEventListener("click", () =>{
         Translator.addOldEnglish(toBeTranslated)
     }else if(whichSelected == 3){
         Translator.addOrc(toBeTranslated);
+    }else if(whichSelected == 4){
+        Translator.addIcelandic(toBeTranslated);
     }
 });
