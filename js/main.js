@@ -6,7 +6,7 @@ runTranslate.addEventListener("click", () =>{
     let whichSelected;
     let radios = document.getElementsByName("whichLang");
     for (let i = 0; i < radios.length; i++){
-        //0 = emoji, 1 = French, 2 = Old English, 4 = Orc
+        //0 = emoji, 1 = French, 2 = Old English, 3 = Orc
         if (radios[i].checked) {
             whichSelected = radios[i].value;
             break;
@@ -24,3 +24,4 @@ runTranslate.addEventListener("click", () =>{
         Translator.addOrc(toBeTranslated);
     }
 });
+
