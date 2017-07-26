@@ -1,4 +1,4 @@
-// console.log( "icelandic.js" );
+console.log( "icelandic.js" );
 
 var Translator = (function() {
 
