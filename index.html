@@ -17,7 +17,7 @@
 
 	<div class="col-md-6" id="content">
 
-		<img src="images/badger.png" id="badger">
+		<button id="runTranslate" type="submit"><img src="images/badger.png" id="badger"></button>
 
 		<input type="text" id="toBeTranslated" value="Merry Christmas and Happy New Year"><br><br>
 		<input class="radio-btn" type="radio" name="whichLang" value="0" checked><span>  Emoji</span><br><br>
@@ -25,8 +25,6 @@
 		<input class="radio-btn" type="radio" name="whichLang" value="2"><span>  Old-English</span><br><br>
 		<input class="radio-btn" type="radio" name="whichLang" value="4"><span>  Icelandic</span><br><br>
 		<input class="radio-btn" type="radio" name="whichLang" value="3"><span>  Orc</span><br><br>
-
-		<button id="runTranslate" type="submit">Translate</button>
 		<input id="text-speak" onclick='responsiveVoice.speak(newSentence);' type='button' value='🔊 Play' hidden/>
 
 		<div id="output-language"></div>
