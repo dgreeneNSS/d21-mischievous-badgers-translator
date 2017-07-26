@@ -41,4 +41,4 @@ var Translator = (function(e) {
     }
 
 
-)(Translator);g
+)(Translator || {});
