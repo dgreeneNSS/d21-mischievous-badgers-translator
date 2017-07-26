@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Jim+Nightshade|Nothing+You+Could+Do|Rock+Salt');
+
+body {
+	background: url('../images/skulls.png');
+}
+
+h1 {
+	margin: 10px 0px 0px 30px;
+/*	background: black;
+	color: white;*/
+	padding: 5px;
+	display: inline-block;
+	font-family: 'Jim Nightshade', cursive;
+	font-size: 5em;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.56);
+}
+
+#content {
+	padding: 10px;
+}
+
+#badger {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	top: 10px;
+}
+
+#toBeTranslated {
+	position: relative;
+	z-index: 3;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+	font-family: 'Alegreya SC', sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+.radio-btn {
+	padding: ;
+}
+
+span {
+	font-family: 'Alegreya SC', sans-serif;
+	font-size: 2em;
+}
+
+#runTranslate {
+	background: #724500;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+	border-radius: 3px;
+	color: white;
+	border: none;
+	padding: 5px;
+	font-family: 'Alegreya SC', sans-serif;
+	font-size: 1.6em;
+}
+
+#output-language {
+	font-size: 5em;
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'Alegreya SC', sans-serif;
+}

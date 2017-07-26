@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Badger's Translators</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<h1>Translator</h1>
+<h1>Badger Translator</h1>
+
+<div class="row">
+
+	<div class="col-md-3"></div>
+
+	<div class="col-md-6" id="content">
+
+		<img src="images/badger.png" id="badger">
+
+		<input type="text" id="toBeTranslated" value="Merry Christmas and Happy New Year"><br><br>
+		<input class="radio-btn" type="radio" name="whichLang" value="0" checked><span>  Emoji</span><br><br>
+		<input class="radio-btn" type="radio" name="whichLang" value="1"><span>  French</span><br><br>
+		<input class="radio-btn" type="radio" name="whichLang" value="2"><span>  Old-English</span><br><br>
+		<input class="radio-btn" type="radio" name="whichLang" value="4"><span>  Icelandic</span><br><br>
+		<input class="radio-btn" type="radio" name="whichLang" value="3"><span>  Orc</span><br><br>
+
+		<button id="runTranslate" type="submit">Translate</button>
+		<input id="text-speak" onclick='responsiveVoice.speak(newSentence);' type='button' value='🔊 Play' hidden/>
+
+		<div id="output-language"></div>
+
+	</div>
+
+	<div class="col-md-3"></div>
 
 
 
-<input type="text" id="toBeTranslated" value="Merry Christmas and Happy New Year"><br>
-<input type="radio" name="whichLang" value="0" checked>Emoji<br>
-<input type="radio" name="whichLang" value="1">French<br>
-<input type="radio" name="whichLang" value="2">Old-English<br>
-<input type="radio" name="whichLang" value="4">Icelandic<br>
-<input type="radio" name="whichLang" value="3">Orc<br>
 
 
 
 
-<button id="runTranslate" type="submit">Translate</button>
-<input id="text-speak" onclick='responsiveVoice.speak(newSentence);' type='button' value='🔊 Play' hidden/>
-
-<div id="output-language"></div>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 <script src="js/french.js"></script>
