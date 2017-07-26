@@ -31,8 +31,8 @@ var Translator = (function() {
             output_div.innerText = newSentence.join(' ')
             let speak = document.querySelector('#text-speak')
             let speak_att = document.createAttribute('onclick')
-            speak_att.value = responsiveVoice.speak(output_div.innerText, 'Welsh Male', {pitch: -10}, {rate: -.5})
-            speat.setAttributeNode(speak_att)
+            speak_att.value = responsiveVoice.speak(output_div.innerText, 'Welsh Male', {pitch: 0}, {rate: 0})
+            speak.setAttributeNode(speak_att)
         }
 
 
