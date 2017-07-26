@@ -39,4 +39,4 @@ var Translator = (function(e) {
     }
 
 
-)(Translator);
+)(Translator || {});
