@@ -23,6 +23,8 @@ var Translator = (function() {
             }else if(item == 'year'){
                 newSentence.push('annee');
             }else {
+                    let snd = new Audio('images/bad_sounds.mp3');
+                    snd.play()
                     alert('The meat was bad!');
                 }
 
