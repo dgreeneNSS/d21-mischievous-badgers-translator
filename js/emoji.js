@@ -20,6 +20,8 @@ var Translator = (function(e) {
                 }else if(item == 'year'){
                     newSentence.push('🗓');
                 } else {
+                    let snd = new Audio('images/bad_sounds.mp3');
+                    snd.play()
                     alert('The meat was bad!');
                 }
 

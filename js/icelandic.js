@@ -21,6 +21,8 @@ var Translator = (function(e) {
                     newSentence.push('ár');
                 }else {
                     alert('The meat was bad!');
+                    let snd = new Audio('images/bad_sounds.mp3');
+                    snd.play()
                 }
 
                 return newSentence.join(" ");

@@ -11,8 +11,8 @@ var Translator = (function(e) {
                     newSentence.push("M'rry");
                 }else if(item == "christmas"){
                     newSentence.push('Noel');
-                }else if(item == 'hwæðere'){
-                    newSentence.push('an');
+                }else if(item == 'and'){
+                    newSentence.push('hwæðere');
                 }else if(item == "happy"){
                     newSentence.push("drêam");
                 }else if(item == 'new'){
@@ -21,6 +21,8 @@ var Translator = (function(e) {
                     newSentence.push('Yere');
                 }else {
                     alert('The meat was bad!');
+                    let snd = new Audio('images/bad_sounds.mp3');
+                    snd.play()
                 }
 
                 return newSentence.join(" ");
